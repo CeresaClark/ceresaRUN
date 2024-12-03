@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>莎莎跑酷遊戲</title>
+
+    <link rel="stylesheet" type="text/css" href="scss/style.css">
+
+</head>
+
+<body>
+
+    <div class="ground"></div>
+    <div class="spark" id="particles-js"></div>
+    <canvas id="canvas"></canvas>
+    <div id="start">
+        <p>點擊螢幕開始遊戲</p>
+    </div>
+    <div class="btns">
+        <div class="play"></div>
+        <div class="pause"></div>
+        <div class="replay"></div>
+    </div>
+    <div id="replay">再玩一次</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'js/particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
+
+</body>
+
+</html>

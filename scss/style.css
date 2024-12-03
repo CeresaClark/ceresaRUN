@@ -1,0 +1,147 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #1e2c39, #0e161e);
+}
+body .ground {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  background-image: url(../img/ground1.png);
+  background-repeat: repeat;
+  background-size: 130px 215px;
+}
+body #particles-js {
+  width: 100vw;
+  height: 100vh;
+}
+body #canvas {
+  position: absolute;
+  top: 0;
+}
+body #start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+body #start p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 5vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  animation: startP 1s infinite linear;
+}
+body #start p::before, body #start p::after {
+  position: absolute;
+  content: "";
+  transform: translateX(-100%);
+  width: 7vw;
+  height: 100%;
+  background: url(../img/padoru.gif) no-repeat center/contain;
+}
+body #start p::before {
+  left: 0%;
+}
+body #start p::after {
+  right: 0%;
+  transform: translateX(100%);
+}
+body .btns {
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+  width: 5vw;
+  height: 12vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .btns .play, body .btns .pause, body .btns .replay {
+  width: 5vw;
+  height: 5vw;
+  cursor: pointer;
+}
+body .btns .play {
+  -webkit-clip-path: polygon(20% 10%, 90% 50%, 20% 90%);
+          clip-path: polygon(20% 10%, 90% 50%, 20% 90%);
+  background-color: #fff;
+  display: none;
+}
+body .btns .pause::before, body .btns .pause::after {
+  position: absolute;
+  content: "";
+  top: 0.75vw;
+  left: 18%;
+  width: 16%;
+  height: 3.5vw;
+  background-color: #fff;
+}
+body .btns .pause::after {
+  left: unset;
+  right: 18%;
+}
+body .btns .replay {
+  background-color: #fff;
+  -webkit-mask: url(../img/replay.png) no-repeat center/contain;
+          mask: url(../img/replay.png) no-repeat center/contain;
+}
+body #replay {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  translate: -50% 0%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8vw 2vw;
+  line-height: 5vw;
+  color: #fff;
+  font-size: 4vw;
+  font-weight: 600;
+  border-radius: 1vw;
+  background-color: #C83c23;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: none;
+}
+
+@keyframes startP {
+  0% {
+    top: 50%;
+  }
+  30% {
+    top: 49%;
+  }
+  50% {
+    top: 50%;
+  }
+  70% {
+    top: 49%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes groundRun {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}/*# sourceMappingURL=style.css.map */
