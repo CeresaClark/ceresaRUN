@@ -13,16 +13,16 @@ const groundHeight = 70 //地面高度
 let gameLoopID
 
 let playerImg = new Image();
-playerImg.src = "../img/padoru.gif";
+playerImg.src = "img/padoru.gif";
 
 let coinImg = new Image();
-coinImg.src = "../img/coin.png";
+coinImg.src = "img/coin.png";
 
 let boomImg = new Image();
-boomImg.src = "../img/boom.png";
+boomImg.src = "img/boom.png";
 
 let groundImg = new Image();
-let groundColor = ['../img/ground1.png', '../img/ground2.png', '../img/ground3.png', '../img/ground4.png']
+let groundColor = ['img/ground1.png', 'img/ground2.png', 'img/ground3.png', 'img/ground4.png']
 
 groundImg.src = groundColor[Math.floor(Math.random()*4)]
 
